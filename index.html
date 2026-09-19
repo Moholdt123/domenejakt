@@ -1,10 +1,10 @@
-<!doctype html><html lang="no"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Domenejakt</title><link rel="stylesheet" href="style.css?v=2"></head><body><main>
-<header><div><h1>Domenejakt</h1><p>Radar for virksomheter som kan ha behov for domene og nettside.</p></div><span class="badge">RADAR</span></header>
-<section class="controls">
-<label>Firma / ord<input id="q" placeholder="f.eks. bygg, studio, klinikk"></label>
+<!doctype html><html lang="no"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Domenejakt</title><link rel="stylesheet" href="style.css?v=3"></head><body><main>
+<header><div><div class="eyebrow">BEDRIFTSRADAR</div><h1>Domenejakt</h1><p>Finn interessante virksomheter og ryddige domenekandidater.</p></div><div class="logo">DJ</div></header>
+<section class="panel"><div class="controls">
+<label>Firma / ord<input id="q" placeholder="Bygg, studio, klinikk …"></label>
 <label>Bransje<select id="industry"><option value="">Alle bransjer</option><option value="43.320">Tømrer / snekker</option><option value="43.330">Gulvlegging</option><option value="43.340">Maler / glass</option><option value="43.220">VVS</option></select></label>
 <label>Antall<select id="size"><option>20</option><option selected>50</option><option>100</option></select></label>
-<label class="check"><input type="checkbox" id="hideNoise" checked> Skjul holding/prosjekt</label>
-<button id="search">Søk bedrifter</button></section>
-<p class="hint">Viser virksomheter fra Enhetsregisteret. Sorteringen er kun en praktisk vurdering av mulig nettbehov – ikke informasjon om at bedriften faktisk ønsker et domene.</p>
-<div id="status"></div><div id="results"></div></main><script src="app.js?v=2"></script></body></html>
+<button id="search">Finn kandidater</button></div>
+<div class="filters"><label><input type="checkbox" id="hideNoise" checked> Skjul holding/prosjekt</label><label><input type="checkbox" id="hideInactive" checked> Skjul konkurs/avvikling</label></div></section>
+<div class="info">Domeneforslag er automatiske kandidater. Tilgjengelighet og eventuelle navnerettigheter må vurderes separat.</div>
+<div id="status"></div><div id="results"></div></main><script src="app.js?v=3"></script></body></html>
