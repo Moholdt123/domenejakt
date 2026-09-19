@@ -1,15 +1,10 @@
-<!doctype html>
-<html lang="no"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Domenejakt</title><link rel="stylesheet" href="style.css"></head>
-<body><main>
-<header><div><h1>Domenejakt</h1><p>Finn bedrifter i Enhetsregisteret og lag domeneforslag.</p></div><span class="badge">MVP</span></header>
+<!doctype html><html lang="no"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Domenejakt</title><link rel="stylesheet" href="style.css?v=2"></head><body><main>
+<header><div><h1>Domenejakt</h1><p>Radar for virksomheter som kan ha behov for domene og nettside.</p></div><span class="badge">RADAR</span></header>
 <section class="controls">
-<label>Søk etter firma / ord<input id="q" placeholder="f.eks. tømrer"></label>
-<label>Næringskode<input id="code" value="43.320" placeholder="43.320"></label>
-<label>Antall<select id="size"><option>20</option><option>50</option><option>100</option></select></label>
-<button id="search">Søk Brønnøysund</button>
-</section>
-<p class="hint">Standard: 43.320 Snekkerarbeid. Domeneforslag er bare forslag – tilgjengelighet må bekreftes hos registrar/Norid.</p>
-<div id="status"></div>
-<div id="results"></div>
-</main><script src="app.js"></script></body></html>
+<label>Firma / ord<input id="q" placeholder="f.eks. bygg, studio, klinikk"></label>
+<label>Bransje<select id="industry"><option value="">Alle bransjer</option><option value="43.320">Tømrer / snekker</option><option value="43.330">Gulvlegging</option><option value="43.340">Maler / glass</option><option value="43.220">VVS</option></select></label>
+<label>Antall<select id="size"><option>20</option><option selected>50</option><option>100</option></select></label>
+<label class="check"><input type="checkbox" id="hideNoise" checked> Skjul holding/prosjekt</label>
+<button id="search">Søk bedrifter</button></section>
+<p class="hint">Viser virksomheter fra Enhetsregisteret. Sorteringen er kun en praktisk vurdering av mulig nettbehov – ikke informasjon om at bedriften faktisk ønsker et domene.</p>
+<div id="status"></div><div id="results"></div></main><script src="app.js?v=2"></script></body></html>
