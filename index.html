@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="no"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Domenejakt</title><link rel="stylesheet" href="style.css"></head>
+<body><main>
+<header><div><h1>Domenejakt</h1><p>Finn bedrifter i Enhetsregisteret og lag domeneforslag.</p></div><span class="badge">MVP</span></header>
+<section class="controls">
+<label>Søk etter firma / ord<input id="q" placeholder="f.eks. tømrer"></label>
+<label>Næringskode<input id="code" value="43.320" placeholder="43.320"></label>
+<label>Antall<select id="size"><option>20</option><option>50</option><option>100</option></select></label>
+<button id="search">Søk Brønnøysund</button>
+</section>
+<p class="hint">Standard: 43.320 Snekkerarbeid. Domeneforslag er bare forslag – tilgjengelighet må bekreftes hos registrar/Norid.</p>
+<div id="status"></div>
+<div id="results"></div>
+</main><script src="app.js"></script></body></html>
